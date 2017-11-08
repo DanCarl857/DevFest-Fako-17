@@ -47,6 +47,18 @@ class TodoList extends Component {
     e.preventDefault(); // <-- What is this?
   }
 
+  // onChange = (event) => {
+  //   this.setState({ term: event.target.value })
+  // }
+
+  // onSubmit = (event) => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     term: '',
+  //     items: [ ...this.state.items, this.state.term ]
+  //   });
+  // }
+
 
   render() {
     return (
@@ -56,6 +68,9 @@ class TodoList extends Component {
             <input
               placeholder="Enter a task..."
               ref={(a) => this._inputElement = a}
+              value={this.state.term}
+              // onChange={this.onChange}
+              // value={this.state.term}
             />
             <button>Add</button>
           </form>
