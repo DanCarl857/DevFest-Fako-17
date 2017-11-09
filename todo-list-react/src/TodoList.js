@@ -68,9 +68,6 @@ class TodoList extends Component {
             <input
               placeholder="Enter a task..."
               ref={(a) => this._inputElement = a}
-              value={this.state.term}
-              // onChange={this.onChange}
-              // value={this.state.term}
             />
             <button>Add</button>
           </form>
